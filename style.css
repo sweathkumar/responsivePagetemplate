@@ -69,13 +69,16 @@
 }
 .section-two-Para{
     color: aliceblue;
-    font-size: larger;
+    font-size: medium;
     text-align: center;
 }
 /* Footer Section */
 .footerSection{
     background-color: black;
     padding: 20px;
+}
+.footerContainer{
+    padding: 20px 30px;
 }
 .footList{
     margin: 20px 5px;
@@ -112,6 +115,9 @@
         display: block;
         padding: 10px;
         height: 100%;
+    }
+    .footerContainer{
+        padding: 10px 20px;
     }
     .fs-Container-one, .fs-Container-two{
         padding: 20px;
