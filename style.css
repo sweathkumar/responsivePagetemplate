@@ -20,15 +20,20 @@
     font-size: large;
 }
 /* middle content  */
-.menulistItems{
+.centerNavContainer{
+    display: none;
+}
+
+/* replace to higher pixel than phone  */
+/* .menulistItems{
     margin: 0px 5px;
 }
 .menulistItemContent{
     text-decoration: none;
     color: aliceblue;
-    font-size: small;
+    font-size: large;
     font-weight: 600;
-}
+} */
 /* right content  */
 .contactButton1{
     padding: 10px 15px 10px 15px;
@@ -46,7 +51,7 @@
     height: fit-content;
 }
 .fs-Container-row-one{
-    display: flex;
+    display: block;
 }
 .fs-Container-column-one, .fs-Container-column-two{
     padding: 20px;
@@ -109,7 +114,7 @@
 .footlistItemContent{
     color: white;
     padding: 5px;
-    font-size: large;
+    font-size: medium;
     text-decoration: none;
 }
 .footer-Content{
@@ -124,54 +129,154 @@
     text-align: center;
     margin: 10px 0px;
 }
-/* phone  */
-@media screen and (max-width: 530px) {
+/* Responsive Section  */
+/* phone maximum 767px  */
+@media screen and (max-width: 767px) {
+    /* Header section */
     .headerSection{
-        padding: 20px 30px;
+        padding: 10px 20px;
+        background-color: black;
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.527);
     }
+    .navBar{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    /* left content  */
     .leftNavContainer{
-        font-size: larger;
+        color: aliceblue;
+        font-size: large;
     }
+    /* middle content  */
     .centerNavContainer{
         display: none;
     }
+
+    /* replace to higher pixel than phone  */
+
+    /* right content  */
+    .contactButton1{
+        padding: 10px 15px 10px 15px;
+        border: none;
+        color: rgb(0, 0, 0);
+        background-color: rgb(255, 255, 255);
+        border-radius: 5px;
+        font-weight: 700;
+        font-size: large;
+    }
+    /* First Section */
     .firstSection{
         display: block;
+        top: 30px;
         height: fit-content;
     }
     .fs-Container-row-one{
         display: block;
-        width: 100%;
+        padding: 5vh 20px;
     }
-    .fs-three-content{
-        font-size: xx-large;
-    }
-    .footerContainer{
-        padding: 10px 20px;
-    }
-    .fs-Container-one, .fs-Container-two{
+    .fs-Container-column-one, .fs-Container-column-two{
         padding: 20px;
         width: fit-content;
-        height: fit-content;
     }
     .fs-one-title, .fs-two-title{
-        font-size: xx-large;
+        margin: 5px 0px;
     }
-    .fs-one-content, .fs-two-content{
-        font-size: x-large;
+    .fs-Container-row-two{
+        grid-column: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        height: 40vh;
+        background-image: url(https://img.freepik.com/free-photo/modern-podium-product-design-against-backdrop-tropical-forest_1268-31490.jpg?t=st=1720688946~exp=1720692546~hmac=35515231fa886b6dd64c8f5da9e36a565ae104196cb0c6b5561857640cd25566&w=826);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .fs-three-content{
+        padding: 20px;
+        font-weight: 500;
+        color: rgb(255, 255, 255);
+        text-shadow: 0px 0px 20px black;
+    }
+    /* Second Section  */
+    .secondSection{
+        background-image: url(https://img.freepik.com/free-photo/vivid-blurred-colorful-background_58702-2642.jpg?t=st=1720675589~exp=1720679189~hmac=fd650d87ef846c54f30a9836f14c4163e6d7bdf6e1de16f9b0a5bd068e7b3ed5&w=740);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 50vh;
+        padding: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     .section-two-title{
+        color: aliceblue;
         font-size: xx-large;
+        text-align: center;
+        margin: 5px 0px;
     }
     .section-two-Para{
-        font-size: x-large;
+        color: aliceblue;
+        font-size: medium;
+        text-align: center;
+    }
+    /* Footer Section */
+    .footerSection{
+        background-color: black;
+        padding: 20px;
+    }
+    .footerContainer{
+        padding: 20px 30px;
     }
     .footList{
+        margin: 20px 5px;
         display: flex;
-        flex-direction: row;
+        justify-content: space-around;
+    }
+    .footlistItemContent{
+        color: white;
+        padding: 5px;
+        font-size: medium;
+        text-decoration: none;
+    }
+    .footer-Content{
+        font-size: small;
+        color: aliceblue;
+        text-align: center;
+        margin: 5px 0px;
+    }
+    .footer-closer{
+        font-size: medium;
+        color: rgb(136, 136, 136);
+        text-align: center;
+        margin: 10px 0px;
     }
 }
-/* Laptop  */
-@media screen and (min-width: 1080px){
-
+/* Tablet minimum 768px to maximum 1023px  */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .menulistItems{
+        margin: 0px 5px;
+    }
+    .menulistItemContent{
+        text-decoration: none;
+        color: aliceblue;
+        font-size: large;
+        font-weight: 600;
+    }
+    .fs-Container-row-one{
+        display: flex;
+        padding: 50px;
+    }
+    .fs-Container-row-two{
+        height: 40vh;
+    }
+    .fs-three-content{
+        padding: 0vh 10vw;
+        font-size: larger;
+    }
+}
+/* Desktop minimum 1024px */
+@media screen and (min-width: 1024px) {
+    
 }
