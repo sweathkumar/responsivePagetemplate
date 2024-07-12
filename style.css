@@ -20,14 +20,8 @@
     font-size: large;
 }
 /* middle content  */
-.menulistItems{
-    margin: 0px 5px;
-}
-.menulistItemContent{
-    text-decoration: none;
-    color: aliceblue;
-    font-size: small;
-    font-weight: 600;
+.centerNavContainer{
+    display: none;
 }
 /* right content  */
 .contactButton1{
@@ -46,7 +40,7 @@
     height: fit-content;
 }
 .fs-Container-row-one{
-    display: flex;
+    display: block;
 }
 .fs-Container-column-one, .fs-Container-column-two{
     padding: 20px;
@@ -56,7 +50,6 @@
     margin: 5px 0px;
 }
 .fs-Container-row-two{
-    grid-column: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -64,6 +57,7 @@
     background-image: url(https://img.freepik.com/free-photo/modern-podium-product-design-against-backdrop-tropical-forest_1268-31490.jpg?t=st=1720688946~exp=1720692546~hmac=35515231fa886b6dd64c8f5da9e36a565ae104196cb0c6b5561857640cd25566&w=826);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center center;
 }
 .fs-three-content{
     padding: 20px;
@@ -76,6 +70,7 @@
     background-image: url(https://img.freepik.com/free-photo/vivid-blurred-colorful-background_58702-2642.jpg?t=st=1720675589~exp=1720679189~hmac=fd650d87ef846c54f30a9836f14c4163e6d7bdf6e1de16f9b0a5bd068e7b3ed5&w=740);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center center;
     height: 50vh;
     padding: 30px;
     display: flex;
@@ -109,7 +104,7 @@
 .footlistItemContent{
     color: white;
     padding: 5px;
-    font-size: large;
+    font-size: medium;
     text-decoration: none;
 }
 .footer-Content{
@@ -124,54 +119,283 @@
     text-align: center;
     margin: 10px 0px;
 }
-/* phone  */
-@media screen and (max-width: 530px) {
+/* Responsive Section  */
+@media screen and (max-width: 370px){
+    .footlist{
+        padding: 10px;
+    }
+}
+/* phone maximum 767px  */
+@media screen and (max-width: 767px) {
+    /* Header section */
     .headerSection{
-        padding: 20px 30px;
+        padding: 10px 20px;
+        background-color: black;
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.527);
     }
+    .navBar{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    /* left content  */
     .leftNavContainer{
-        font-size: larger;
+        color: aliceblue;
+        font-size: large;
     }
+    /* middle content  */
     .centerNavContainer{
         display: none;
     }
+    /* right content  */
+    .contactButton1{
+        display: none;
+    }
+    .menubar{
+        width: 30px;
+        height: 30px;
+    }
+    /* First Section */
     .firstSection{
         display: block;
+        top: 30px;
         height: fit-content;
     }
     .fs-Container-row-one{
         display: block;
-        width: 100%;
+        padding: 5vh 20px;
+    }
+    .fs-Container-column-one, .fs-Container-column-two{
+        padding: 20px;
+        width: fit-content;
+    }
+    .fs-one-title, .fs-two-title{
+        margin: 5px 0px;
+    }
+    .fs-Container-row-two{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        height: 40vh;
+        background-image: url(https://img.freepik.com/free-photo/modern-podium-product-design-against-backdrop-tropical-forest_1268-31490.jpg?t=st=1720688946~exp=1720692546~hmac=35515231fa886b6dd64c8f5da9e36a565ae104196cb0c6b5561857640cd25566&w=826);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    .fs-three-content{
+        padding: 20px;
+        font-weight: 500;
+        color: rgb(255, 255, 255);
+        text-shadow: 0px 0px 20px black;
+    }
+    /* Second Section  */
+    .secondSection{
+        background-image: url(https://img.freepik.com/free-photo/vivid-blurred-colorful-background_58702-2642.jpg?t=st=1720675589~exp=1720679189~hmac=fd650d87ef846c54f30a9836f14c4163e6d7bdf6e1de16f9b0a5bd068e7b3ed5&w=740);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        height: 50vh;
+        padding: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .section-two-title{
+        color: aliceblue;
+        font-size: xx-large;
+        text-align: center;
+        margin: 5px 0px;
+    }
+    .section-two-Para{
+        color: aliceblue;
+        font-size: medium;
+        text-align: center;
+    }
+    /* Footer Section */
+    .footerSection{
+        background-color: black;
+        padding: 20px;
+    }
+    .footerContainer{
+        padding: 20px 30px;
+    }
+    .footList{
+        margin: 20px 5px;
+        display: flex;
+        justify-content: space-around;
+    }
+    .footlistItemContent{
+        color: white;
+        padding: 5px;
+        font-size: small;
+        text-decoration: none;
+    }
+    .footer-Content{
+        font-size: small;
+        color: aliceblue;
+        text-align: center;
+        margin: 5px 0px;
+    }
+    .footer-closer{
+        font-size: medium;
+        color: rgb(136, 136, 136);
+        text-align: center;
+        margin: 10px 0px;
+    }
+}
+/* Tablet minimum 768px to maximum 1023px  */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .centerNavContainer{
+        display: flex;
+    }
+    .menulistItems{
+        margin: 0px 5px;
+    }
+    .menulistItemContent{
+        text-decoration: none;
+        color: aliceblue;
+        font-size: medium;
+        font-weight: 600;
+    }
+    .menubar{
+        display: none;
+    }
+    .contactButton1{
+        padding: 10px 15px 10px 15px;
+        border: none;
+        color: rgb(0, 0, 0);
+        background-color: rgb(255, 255, 255);
+        border-radius: 5px;
+        font-weight: 700;
+        font-size: large;
+    }
+    .fs-Container-row-one{
+        display: flex;
+        padding: 50px;
+    }
+    .fs-Container-row-two{
+        height: 40vh;
+    }
+    .fs-three-content{
+        padding: 0vh 10vw;
+        font-size: larger;
+    }
+    .section-two-Para{
+        padding: 1vh 15vw;
+    }
+    .footList{
+        padding: 0vh 25vw;
+    }
+}
+/* Desktop minimum 1024px */
+@media screen and (min-width: 1024px) {
+    .centerNavContainer{
+        display: flex;
+    }
+    .menulistItems{
+        margin: 0px 5px;
+    }
+    .menulistItemContent{
+        text-decoration: none;
+        color: aliceblue;
+        font-size: larger;
+        font-weight: 600;
+    }
+    .menubar{
+        display: none;
+    }
+    .contactButton1{
+        padding: 10px 15px 10px 15px;
+        border: none;
+        color: rgb(0, 0, 0);
+        background-color: rgb(255, 255, 255);
+        border-radius: 5px;
+        font-weight: 700;
+        font-size: large;
+    }
+    .firstSection{
+        display: block;
+    }
+    .fs-Container-row-one{
+        display: block;
+        padding: 0vh 0vw;
+    }
+    .fs-Container-column-one{
+        background-image: url(https://img.freepik.com/free-photo/abstract-luxury-gradient-blue-background-smooth-dark-blue-with-black-vignette-studio-banner_1258-70872.jpg?t=st=1720768619~exp=1720772219~hmac=74e522d7303edc635843c4fb3e68c0511d9c58a288e64e0faf99624f3ca8d3ad&w=996);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    .fs-Container-column-one, .fs-Container-column-two{
+        padding: 35vh 20vw;
+        display: block;
+        text-align: center;
+    }
+    .fs-Container-row-two{
+        padding: 35vh 20vw;
     }
     .fs-three-content{
         font-size: xx-large;
     }
-    .footerContainer{
-        padding: 10px 20px;
-    }
-    .fs-Container-one, .fs-Container-two{
-        padding: 20px;
-        width: fit-content;
-        height: fit-content;
-    }
     .fs-one-title, .fs-two-title{
+        font-size: xxx-large;
+    }
+    .fs-Container-column-one, .fs-Container-column-two{
         font-size: xx-large;
     }
-    .fs-one-content, .fs-two-content{
-        font-size: x-large;
+    .footList{
+        padding: 0vh 30vw;
     }
-    .section-two-title{
-        font-size: xx-large;
+    .ss-Container-one{
+        padding: 0vh 10vw;
     }
     .section-two-Para{
         font-size: x-large;
     }
-    .footList{
-        display: flex;
-        flex-direction: row;
+    .section-two-title{
+        font-size: xxx-large;
+        padding: 10px;
     }
 }
-/* Laptop  */
-@media screen and (min-width: 1080px){
 
-}
+/* modal  */
+/* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    width: 50%;
+    border-radius: 5px;
+  }
+  
+  .modal-content p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  .modal-content button {
+    background-color: #000000;
+    color: white;
+    padding: 20px 40px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .modal-content button:hover {
+    background-color: #000000;
+  }
+  
