@@ -121,8 +121,8 @@
 }
 /* Responsive Section  */
 @media screen and (max-width: 370px){
-    .footmenu{
-        display: block;
+    .footlist{
+        padding: 10px;
     }
 }
 /* phone maximum 767px  */
@@ -228,7 +228,7 @@
     .footlistItemContent{
         color: white;
         padding: 5px;
-        font-size: medium;
+        font-size: small;
         text-decoration: none;
     }
     .footer-Content{
@@ -255,7 +255,7 @@
     .menulistItemContent{
         text-decoration: none;
         color: aliceblue;
-        font-size: large;
+        font-size: medium;
         font-weight: 600;
     }
     .menubar{
@@ -328,12 +328,12 @@
         background-position: center center;
     }
     .fs-Container-column-one, .fs-Container-column-two{
-        padding: 40vh 25vw;
+        padding: 35vh 20vw;
         display: block;
         text-align: center;
     }
     .fs-Container-row-two{
-        padding: 40vh 30vw;
+        padding: 35vh 20vw;
     }
     .fs-three-content{
         font-size: xx-large;
@@ -348,7 +348,7 @@
         padding: 0vh 30vw;
     }
     .ss-Container-one{
-        padding: 40vh 25vw;
+        padding: 0vh 10vw;
     }
     .section-two-Para{
         font-size: x-large;
@@ -387,15 +387,15 @@
   }
   
   .modal-content button {
-    background-color: #033ad3;
+    background-color: #000000;
     color: white;
-    padding: 10px 20px;
+    padding: 20px 40px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
   }
   
   .modal-content button:hover {
-    background-color: #0544ca;
+    background-color: #000000;
   }
   
