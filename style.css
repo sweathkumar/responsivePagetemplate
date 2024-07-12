@@ -130,6 +130,11 @@
     margin: 10px 0px;
 }
 /* Responsive Section  */
+@media screen and (max-width: 370px){
+    .footmenu{
+        display: block;
+    }
+}
 /* phone maximum 767px  */
 @media screen and (max-width: 767px) {
     /* Header section */
@@ -152,18 +157,13 @@
     .centerNavContainer{
         display: none;
     }
-
-    /* replace to higher pixel than phone  */
-
     /* right content  */
     .contactButton1{
-        padding: 10px 15px 10px 15px;
-        border: none;
-        color: rgb(0, 0, 0);
-        background-color: rgb(255, 255, 255);
-        border-radius: 5px;
-        font-weight: 700;
-        font-size: large;
+        display: none;
+    }
+    .menubar{
+        width: 30px;
+        height: 30px;
     }
     /* First Section */
     .firstSection{
@@ -255,6 +255,9 @@
 }
 /* Tablet minimum 768px to maximum 1023px  */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
+    .centerNavContainer{
+        display: flex;
+    }
     .menulistItems{
         margin: 0px 5px;
     }
@@ -263,6 +266,18 @@
         color: aliceblue;
         font-size: large;
         font-weight: 600;
+    }
+    .menubar{
+        display: none;
+    }
+    .contactButton1{
+        padding: 10px 15px 10px 15px;
+        border: none;
+        color: rgb(0, 0, 0);
+        background-color: rgb(255, 255, 255);
+        border-radius: 5px;
+        font-weight: 700;
+        font-size: large;
     }
     .fs-Container-row-one{
         display: flex;
@@ -275,8 +290,60 @@
         padding: 0vh 10vw;
         font-size: larger;
     }
+    .footList{
+        padding: 0vh 25vw;
+    }
 }
 /* Desktop minimum 1024px */
 @media screen and (min-width: 1024px) {
-    
+    .centerNavContainer{
+        display: flex;
+    }
+    .menulistItems{
+        margin: 0px 5px;
+    }
+    .menulistItemContent{
+        text-decoration: none;
+        color: aliceblue;
+        font-size: larger;
+        font-weight: 600;
+    }
+    .menubar{
+        display: none;
+    }
+    .contactButton1{
+        padding: 10px 15px 10px 15px;
+        border: none;
+        color: rgb(0, 0, 0);
+        background-color: rgb(255, 255, 255);
+        border-radius: 5px;
+        font-weight: 700;
+        font-size: large;
+    }
+    .firstSection{
+        display: block;
+    }
+    .fs-Container-row-one{
+        display: block;
+        padding: 0vh 0vw;
+    }
+    .fs-Container-column-one{
+        background-image: url(https://img.freepik.com/free-photo/abstract-luxury-gradient-blue-background-smooth-dark-blue-with-black-vignette-studio-banner_1258-70872.jpg?t=st=1720768619~exp=1720772219~hmac=74e522d7303edc635843c4fb3e68c0511d9c58a288e64e0faf99624f3ca8d3ad&w=996);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .fs-Container-column-one, .fs-Container-column-two{
+        padding: 40vh 30vw;
+        display: block;
+        text-align: center;
+    }
+    .fs-Container-row-two{
+        padding: 40vh 30vw;
+    }
+    .fs-three-content{
+        font-size: x-large;
+    }
+    .footList{
+        padding: 0vh 30vw;
+    }
 }
